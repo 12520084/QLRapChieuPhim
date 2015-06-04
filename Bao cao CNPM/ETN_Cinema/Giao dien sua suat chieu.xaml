@@ -1,0 +1,23 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_sua_suat_chieu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện sửa suất chiếu" Height="300" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <Label x:Name="lb_NgayChieu" Content="Ngày chiếu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,67,0,0" Foreground="#FFF98800" FontWeight="Bold"/>
+        <DatePicker x:Name="datePicker_NgayChieu" HorizontalAlignment="Left" Margin="139,68,0,0" VerticalAlignment="Top" BorderThickness="1"/>
+        <Label x:Name="lb_GioChieu" Content="Giờ Chiếu" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_GiaVe" Content="Giá Vé" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <TextBox x:Name="tb_GiaVe" HorizontalAlignment="Left" Height="23" Margin="139,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lb_PhongChieu" Content="Phòng chiếu" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_LoaiSuatChieu" Content="Loại suất chiếu" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Button x:Name="btn_Submit" Content="Submit" HorizontalAlignment="Left" Margin="407,239,0,0" VerticalAlignment="Top" Width="75" Click="btn_Submit_Click"/>
+        <ComboBox x:Name="cb_Hour" HorizontalAlignment="Left" Margin="139,102,0,0" VerticalAlignment="Top" Width="60"/>
+        <ComboBox x:Name="cb_Minute" HorizontalAlignment="Left" Margin="204,102,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label x:Name="lb_TenPhim" Content="Tên Phim" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <ComboBox x:Name="cb_TenPhongChieu" HorizontalAlignment="Left" Margin="139,164,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cb_LoaiSuatChieu" HorizontalAlignment="Left" Margin="139,195,0,0" VerticalAlignment="Top" Width="60"/>
+        <ComboBox x:Name="cb_TenPhim" HorizontalAlignment="Left" Margin="139,37,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lb_MaSC" Content="Mã Suất Chiếu" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <ComboBox x:Name="cb_MaSC" HorizontalAlignment="Left" Margin="139,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb_MaSC_SelectionChanged"/>
+    </Grid>
+</Window>

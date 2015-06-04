@@ -1,0 +1,41 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_chinh_sua_nhan_vien"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện chỉnh sửa nhân viên" Height="600" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <Label x:Name="lb_TenNhanVien" Content="Họ và Tên" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_NgayThangNamSinh" Content="Ngày tháng năm sinh" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_GioiTinh" Content="Giới tính" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,206,0,0" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_SoDienThoai" Content="Số điện thoại" HorizontalAlignment="Left" Margin="10,237,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_Email" Content="Email" HorizontalAlignment="Left" Margin="10,268,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_QueQuan" Content="Quê quán" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,299,0,0" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_DiaChi" Content="Địa Chỉ" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.093,7.075" Margin="10,330,0,0" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_CMND" Content="Số CMND" HorizontalAlignment="Left" Margin="10,361,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_ChucVu" Content="Chức vụ" HorizontalAlignment="Left" Margin="10,392,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_PhongBan" Content="Phòng ban" HorizontalAlignment="Left" Margin="10,423,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_NgayVaoLam" Content="Ngày vào làm" HorizontalAlignment="Left" Margin="10,456,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Height="38"/>
+        <DatePicker x:Name="datePicker_NgayVaoLam" HorizontalAlignment="Left" Margin="142,459,0,0" VerticalAlignment="Top" Height="35"/>
+        <DatePicker x:Name="datePicker_NamSinh" HorizontalAlignment="Left" Margin="142,176,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_TenNhanVien" HorizontalAlignment="Left" Height="23" Margin="142,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365"/>
+        <TextBox x:Name="tb_SoDienThoai" HorizontalAlignment="Left" Height="23" Margin="142,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365"/>
+        <TextBox x:Name="tb_Email" HorizontalAlignment="Left" Height="23" Margin="142,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365"/>
+        <TextBox x:Name="tb_QueQuan" HorizontalAlignment="Left" Height="23" Margin="142,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365"/>
+        <TextBox x:Name="tb_DiaChi" HorizontalAlignment="Left" Height="23" Margin="142,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365"/>
+        <TextBox x:Name="tb_CMND" HorizontalAlignment="Left" Height="23" Margin="142,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365"/>
+        <Button x:Name="btn_Submit" Content="Sửa Nhân Viên" HorizontalAlignment="Left" Margin="405,516,0,0" VerticalAlignment="Top" Width="102" Click="btn_Submit_Click" Height="30"/>
+        <CheckBox x:Name="checkBox_Nam" Content="Nam" HorizontalAlignment="Left" Margin="142,212,0,0" VerticalAlignment="Top" Checked="checkBox_Nam_Checked" FontWeight="Bold" Foreground="#FFF98800"/>
+        <CheckBox x:Name="checkBox_Nu" Content="Nữ" HorizontalAlignment="Left" Margin="343,212,0,0" VerticalAlignment="Top" Checked="checkBox_Nu_Checked" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Image x:Name="img_AnhNhanVien" HorizontalAlignment="Left" Height="232" Margin="579,186,0,0" VerticalAlignment="Top" Width="142"/>
+        <Button x:Name="btn_ChonAnh" Content="Chọn Ảnh" HorizontalAlignment="Left" Margin="624,150,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.021,-1.172" Click="btn_ChonAnh_Click"/>
+        <Label x:Name="lb_AnhNhanVien" Content="Ảnh nhân viên" HorizontalAlignment="Left" Margin="579,39,0,0" VerticalAlignment="Top" Width="97"/>
+        <TextBlock x:Name="tb_LinkAnh" HorizontalAlignment="Left" Margin="606,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <Label Content="Phòng Ban" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label Content="Tên Nhân Viên" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <ComboBox x:Name ="cbb_MaPB"  HorizontalAlignment="Left" Margin="142,43,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbb_MaPB_SelectionChanged"/>
+        <ComboBox x:Name ="cbb_MaNV"  HorizontalAlignment="Left" Margin="142,74,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbb_MaNV_SelectionChanged"/>
+        <ComboBox x:Name ="cbb_MaPB_Copy"  HorizontalAlignment="Left" Margin="142,427,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbb_MaPB_Copy_SelectionChanged"/>
+        <ComboBox x:Name ="cbb_ChucVu" HorizontalAlignment="Left" Margin="142,396,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbb_ChucVu_SelectionChanged"/>
+        <Button Content="Xóa Nhân Viên" HorizontalAlignment="Left" Margin="557,516,0,0" VerticalAlignment="Top" Width="87" Click="DeleteNV" Height="30"/>
+    </Grid>
+
+</Window>

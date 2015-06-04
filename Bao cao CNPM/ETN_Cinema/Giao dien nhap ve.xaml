@@ -1,0 +1,29 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_nhap_ve"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện nhập vé" Height="400" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <Button x:Name="btn_Submit" Content="Submit" HorizontalAlignment="Left" Margin="407,335,0,0" VerticalAlignment="Top" Width="75" Click="btn_Submit_Click"/>
+        <Label x:Name="lb_TenPhim" Content="Tên Phim" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="79" Foreground="#FFF98800" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,13,0,0"/>
+        <Label x:Name="lb_NgayChieu" Content="Ngày chiếu" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_MaGhe" Content="Mã ghế" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_LoaiSuatChieu" Content="Loại suất chiếu" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <CheckBox x:Name="checkbox_2D" Content="2D" HorizontalAlignment="Left" Margin="111,109,0,0" VerticalAlignment="Top" Checked="checkbox_2D_Checked" FontWeight="Bold" Foreground="#FFF98800"/>
+        <CheckBox x:Name="checkbox_3D" Content="3D" HorizontalAlignment="Left" Margin="277,109,0,0" VerticalAlignment="Top" Checked="checkbox_3D_Checked" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_MaPhieuDatVe" Content="Mã phiếu đặt vé" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,134,0,0" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_MaNhanVien" Content="Mã Nhân viên" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_GioChieu" Content="Giờ chiếu" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_PhongChieu" Content="Phòng chiếu" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_Gia" Content="Giá" HorizontalAlignment="Left" Margin="10,258,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_MaKhachHang" Content="Mã Khách Hàng" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <TextBox x:Name="tb_MaGhe" HorizontalAlignment="Left" Height="23" Margin="111,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="datePicker_NgayChieu" HorizontalAlignment="Left" Margin="111,43,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_MaPhieuDatVe" HorizontalAlignment="Left" Height="23" Margin="111,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_MaNhanVien" HorizontalAlignment="Left" Height="23" Margin="111,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_GioChieu" HorizontalAlignment="Left" Height="23" Margin="111,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_PhongChieu" HorizontalAlignment="Left" Height="23" Margin="111,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_Gia" HorizontalAlignment="Left" Height="23" Margin="111,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_MaKhachHang" HorizontalAlignment="Left" Height="23" Margin="111,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

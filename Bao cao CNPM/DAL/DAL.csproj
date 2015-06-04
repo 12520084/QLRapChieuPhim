@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD983E90-FB87-4AD6-A517-9A2475589907}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChucVu_DAL.cs" />
+    <Compile Include="DoanhSoBanVe_DAL.cs" />
+    <Compile Include="GetIndex.cs" />
+    <Compile Include="Ghe_DAL.cs" />
+    <Compile Include="HeSoKM_DAL.cs" />
+    <Compile Include="HoaDonTD_DAL.cs" />
+    <Compile Include="KhachHang_DAL.cs" />
+    <Compile Include="KhuyenMai_DAL.cs" />
+    <Compile Include="LoaiKhachHang_DAL.cs" />
+    <Compile Include="LoaiSuatChieu_DAL.cs" />
+    <Compile Include="NhanVien_DAL.cs" />
+    <Compile Include="PhieuDatVe_DAL.cs" />
+    <Compile Include="Phim_DAL.cs" />
+    <Compile Include="PhongBan_DAL.cs" />
+    <Compile Include="PhongChieu_DAL.cs" />
+    <Compile Include="sqlConnect.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuatChieu_DAL.cs" />
+    <Compile Include="TheLoai_DAL.cs" />
+    <Compile Include="ThucDon_DAL.cs" />
+    <Compile Include="VeBan_DAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PUBLIC\PUBLIC.csproj">
+      <Project>{27be5100-106a-48f4-98ae-1795fa49ea9e}</Project>
+      <Name>PUBLIC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

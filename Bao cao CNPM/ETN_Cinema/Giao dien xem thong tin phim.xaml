@@ -1,0 +1,35 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_xem_thong_tin_phim"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện xem thông tin phim" Height="500" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <Label x:Name="lb_TenPhim" Content="Tên Phim" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,108,0,0" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_NoiDung" Content="Nội dung" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_ThoiLuong" Content="Thời Lượng" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_DienVien" Content="Diễn viên" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,201,0,0" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_DaoDien" Content="Đạo diễn" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.093,7.075" Margin="10,232,0,0" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_NgayKhoiChieu" Content="Ngày Khởi Chiếu" HorizontalAlignment="Left" Margin="10,263,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_NamPhatHanh" Content="Năm phát hành" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_NuocSanXuat" Content="Nước sản xuất" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_TheLoai" Content="Thể loại" HorizontalAlignment="Left" Margin="252,77,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_DoTuoiQuyDinh" Content="Độ tuổi quy định" HorizontalAlignment="Left" Margin="10,356,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+
+        <Image x:Name="img_Poster" HorizontalAlignment="Left" Height="239" Margin="593,108,0,0" VerticalAlignment="Top" Width="147"/>
+        <Label x:Name="lb_Poster" Content="Poster" HorizontalAlignment="Left" Margin="624,45,0,0" VerticalAlignment="Top" Width="97" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_XuatTenPhim" Content="" HorizontalAlignment="Left" Margin="130,113,0,0" VerticalAlignment="Top" Width="261" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatNoiDung" Content="" HorizontalAlignment="Left" Margin="130,144,0,0" VerticalAlignment="Top" Width="261" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatThoiLuong" Content="" HorizontalAlignment="Left" Margin="130,175,0,0" VerticalAlignment="Top" Width="261" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatDienVien" Content="" HorizontalAlignment="Left" Margin="130,206,0,0" VerticalAlignment="Top" Width="261" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatDaoDien" Content="" HorizontalAlignment="Left" Margin="130,232,0,0" VerticalAlignment="Top" Width="261" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatNgayKhoiChieu" Content="" HorizontalAlignment="Left" Margin="130,263,0,0" VerticalAlignment="Top" Width="261" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatNamPhatHanh" Content="" HorizontalAlignment="Left" Margin="130,294,0,0" VerticalAlignment="Top" Width="261" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatNuocSanXuat" Content="" HorizontalAlignment="Left" Margin="130,325,0,0" VerticalAlignment="Top" Width="261" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatDoTuoiQuyDinh" Content="" HorizontalAlignment="Left" Margin="130,356,0,0" VerticalAlignment="Top" Width="261" Foreground="#FFF98800"/>
+        <ComboBox x:Name="cb_MaPhim" HorizontalAlignment="Left" Margin="108,81,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb_MaPhim_SelectionChanged"/>
+        <Label x:Name="lb_MaPhim" Content="Mã Phim" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <ComboBox x:Name="cb_TheLoai" HorizontalAlignment="Left" Margin="309,81,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb_TheLoai_SelectionChanged"/>
+        <Label x:Name="lb_xuatTheLoai" Content="Thể Loại" HorizontalAlignment="Left" Margin="10,387,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_XuatTheLoai" Content="" HorizontalAlignment="Left" Margin="130,387,0,0" VerticalAlignment="Top" Width="261" Foreground="#FFF98800"/>
+
+    </Grid>
+</Window>

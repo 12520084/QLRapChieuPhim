@@ -1,0 +1,21 @@
+C:\Users\^^\Desktop\Maitaince\Bao cao CNPM\DAL\bin\Debug\DAL.dll
+C:\Users\^^\Desktop\Maitaince\Bao cao CNPM\DAL\bin\Debug\DAL.pdb
+C:\Users\^^\Desktop\Maitaince\Bao cao CNPM\DAL\bin\Debug\PUBLIC.dll
+C:\Users\^^\Desktop\Maitaince\Bao cao CNPM\DAL\bin\Debug\PUBLIC.pdb
+C:\Users\^^\Desktop\Maitaince\Bao cao CNPM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\^^\Desktop\Maitaince\Bao cao CNPM\DAL\obj\Debug\DAL.dll
+C:\Users\^^\Desktop\Maitaince\Bao cao CNPM\DAL\obj\Debug\DAL.pdb
+E:\Maitaince\Bao cao CNPM\DAL\bin\Debug\DAL.dll
+E:\Maitaince\Bao cao CNPM\DAL\bin\Debug\DAL.pdb
+E:\Maitaince\Bao cao CNPM\DAL\bin\Debug\PUBLIC.dll
+E:\Maitaince\Bao cao CNPM\DAL\bin\Debug\PUBLIC.pdb
+E:\Maitaince\Bao cao CNPM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Maitaince\Bao cao CNPM\DAL\obj\Debug\DAL.dll
+E:\Maitaince\Bao cao CNPM\DAL\obj\Debug\DAL.pdb
+E:\This term\Maitaince\Bao cao CNPM\DAL\bin\Debug\DAL.dll
+E:\This term\Maitaince\Bao cao CNPM\DAL\bin\Debug\DAL.pdb
+E:\This term\Maitaince\Bao cao CNPM\DAL\bin\Debug\PUBLIC.dll
+E:\This term\Maitaince\Bao cao CNPM\DAL\bin\Debug\PUBLIC.pdb
+E:\This term\Maitaince\Bao cao CNPM\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\This term\Maitaince\Bao cao CNPM\DAL\obj\Debug\DAL.dll
+E:\This term\Maitaince\Bao cao CNPM\DAL\obj\Debug\DAL.pdb

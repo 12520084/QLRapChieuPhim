@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85E7E69E-D52D-4C20-AB14-4EFFDDF4802F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ETN_Cinema</RootNamespace>
+    <AssemblyName>ETN_Cinema</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.ReportViewer.WinForms\11.0.0.0__89845dcd8080cc91\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Giao dien thay doi mat khau khach hang.xaml.cs">
+      <DependentUpon>Giao dien thay doi mat khau khach hang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien thong ke doanh so ve.xaml.cs">
+      <DependentUpon>Giao dien thong ke doanh so ve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien tinh luong nhan vien.xaml.cs">
+      <DependentUpon>Giao dien tinh luong nhan vien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RAPCHIEUPHIMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RAPCHIEUPHIMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RAPCHIEUPHIMDataSetDoanhSo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RAPCHIEUPHIMDataSetDoanhSo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewer.xaml.cs">
+      <DependentUpon>ReportViewer.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Giao dien ban ve.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien chinh sua nhan vien.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien chon ghe dat ve.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien chon ghe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien dang ky khach hang.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Giao dien dang nhap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien mo suat chieu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Giao dien nguoi su dung.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien nhap khuyen mai.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien nhap nhan vien.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Giao dien nhap phim.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Giao dien nhap thuc don.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Giao dien nhap ve.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Giao dien phieu dat ve.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Giao dien ban ve.xaml.cs">
+      <DependentUpon>Giao dien ban ve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien chinh sua nhan vien.xaml.cs">
+      <DependentUpon>Giao dien chinh sua nhan vien.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien chon ghe dat ve.xaml.cs">
+      <DependentUpon>Giao dien chon ghe dat ve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien chon ghe.xaml.cs">
+      <DependentUpon>Giao dien chon ghe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien dang ky khach hang.xaml.cs" />
+    <Compile Include="Giao dien dang nhap.xaml.cs">
+      <DependentUpon>Giao dien dang nhap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien mo suat chieu.xaml.cs" />
+    <Compile Include="Giao dien nguoi su dung.xaml.cs">
+      <DependentUpon>Giao dien nguoi su dung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien nhap khuyen mai.xaml.cs">
+      <DependentUpon>Giao dien nhap khuyen mai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien nhap nhan vien.xaml.cs" />
+    <Compile Include="Giao dien nhap phim.xaml.cs" />
+    <Compile Include="Giao dien nhap thuc don.xaml.cs" />
+    <Compile Include="Giao dien nhap ve.xaml.cs" />
+    <Compile Include="Giao dien phieu dat ve.xaml.cs" />
+    <Page Include="Giao dien phong tai chinh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien quan li nhan su.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien sua khuyen mai.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien sua suat chieu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien sua thong tin khach hang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien sua thong tin phim.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien thay doi mat khau khach hang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien thay doi mat khau.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Giao dien thong ke doanh so ve.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien thong tin khach hang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien tinh gia ve.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien tinh luong nhan vien.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Giao dien xem ho so.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien xem phieu dat ve.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao dien xem thong tin phim.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao_dien_marketing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao_dien_quan_li_phong_kinh_doanh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao_dien_quan_ly_khach_hang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Giao_dien_quan_ly_phim.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReportViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Giao dien phong tai chinh.xaml.cs">
+      <DependentUpon>Giao dien phong tai chinh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien quan li nhan su.xaml.cs">
+      <DependentUpon>Giao dien quan li nhan su.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien sua khuyen mai.xaml.cs">
+      <DependentUpon>Giao dien sua khuyen mai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien sua suat chieu.xaml.cs">
+      <DependentUpon>Giao dien sua suat chieu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien sua thong tin khach hang.xaml.cs">
+      <DependentUpon>Giao dien sua thong tin khach hang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien sua thong tin phim.xaml.cs">
+      <DependentUpon>Giao dien sua thong tin phim.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien thay doi mat khau.xaml.cs">
+      <DependentUpon>Giao dien thay doi mat khau.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien thong tin khach hang.xaml.cs">
+      <DependentUpon>Giao dien thong tin khach hang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien tinh gia ve.xaml.cs">
+      <DependentUpon>Giao dien tinh gia ve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien xem ho so.xaml.cs">
+      <DependentUpon>Giao dien xem ho so.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien xem phieu dat ve.xaml.cs">
+      <DependentUpon>Giao dien xem phieu dat ve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao dien xem thong tin phim.xaml.cs">
+      <DependentUpon>Giao dien xem thong tin phim.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao_dien_marketing.xaml.cs">
+      <DependentUpon>Giao_dien_marketing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao_dien_quan_li_phong_kinh_doanh.xaml.cs">
+      <DependentUpon>Giao_dien_quan_li_phong_kinh_doanh.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao_dien_quan_ly_khach_hang.xaml.cs">
+      <DependentUpon>Giao_dien_quan_ly_khach_hang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Giao_dien_quan_ly_phim.xaml.cs">
+      <DependentUpon>Giao_dien_quan_ly_phim.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ReportDoanhSo.rdlc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="RAPCHIEUPHIMDataSet.xsc">
+      <DependentUpon>RAPCHIEUPHIMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RAPCHIEUPHIMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RAPCHIEUPHIMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RAPCHIEUPHIMDataSet.xss">
+      <DependentUpon>RAPCHIEUPHIMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RAPCHIEUPHIMDataSetDoanhSo.xsc">
+      <DependentUpon>RAPCHIEUPHIMDataSetDoanhSo.xsd</DependentUpon>
+    </None>
+    <None Include="RAPCHIEUPHIMDataSetDoanhSo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RAPCHIEUPHIMDataSetDoanhSo.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RAPCHIEUPHIMDataSetDoanhSo.xss">
+      <DependentUpon>RAPCHIEUPHIMDataSetDoanhSo.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUL\BUL.csproj">
+      <Project>{d8f7a628-ab72-4f56-a0a1-04e48b94a8b2}</Project>
+      <Name>BUL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PUBLIC\PUBLIC.csproj">
+      <Project>{27be5100-106a-48f4-98ae-1795fa49ea9e}</Project>
+      <Name>PUBLIC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\people_manage\view_profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\login\btn_Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\login\button-login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\people_manage\type.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\people_manage\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\people_manage\chage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\people_manage\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\business_manage\manage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\business_manage\care.png" />
+    <Resource Include="resource\business_manage\customer.png" />
+    <Resource Include="resource\business_manage\marketing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\business_manage\film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\business_manage\edit_film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\business_manage\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\salary_manage\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\customer_manage\book_ticket.png" />
+    <Resource Include="resource\customer_manage\edit_ticket.png" />
+    <Resource Include="resource\customer_manage\tickeet.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+E:\This term\Maitaince\Bao cao CNPM\PUBLIC\bin\Debug\PUBLIC.dll
+E:\This term\Maitaince\Bao cao CNPM\PUBLIC\bin\Debug\PUBLIC.pdb
+E:\This term\Maitaince\Bao cao CNPM\PUBLIC\obj\Debug\PUBLIC.csprojResolveAssemblyReference.cache
+E:\This term\Maitaince\Bao cao CNPM\PUBLIC\obj\Debug\PUBLIC.dll
+E:\This term\Maitaince\Bao cao CNPM\PUBLIC\obj\Debug\PUBLIC.pdb

@@ -1,0 +1,33 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_sua_thong_tin_khach_hang"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện sửa thông tin khách hàng" Height="388" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <Label x:Name="lb_Title" Content="THÔNG TIN KHÁCH HÀNG" HorizontalAlignment="Center" Margin="175,10,118,0" VerticalAlignment="Top" FontSize="20" Width="301" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_HoTen" Content="Họ Tên" HorizontalAlignment="Left" Margin="48,65,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Height="30"/>
+        <Label x:Name="lb_DiaChi" Content="Địa Chỉ" HorizontalAlignment="Left" Margin="48,170,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Height="30"/>
+        <Label x:Name="lb_SDT" Content="Số Điện Thoại" HorizontalAlignment="Left" Margin="48,205,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Height="30"/>
+        <Label x:Name="lb_CMND" Content="CMND" HorizontalAlignment="Left" Margin="48,240,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Height="30"/>
+        <Label x:Name="lb_Email" Content="Email" HorizontalAlignment="Left" Margin="48,275,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Height="30"/>
+        <Label x:Name="lb_XuatMaKH" Content="Label" HorizontalAlignment="Left" Margin="175,30,0,0" VerticalAlignment="Top" Height="30"/>
+        <TextBox x:Name="lb_XuatHoTen" Text="" HorizontalAlignment="Left" Margin="175,65,0,0" VerticalAlignment="Top" Height="20" Width="234"/>
+        <TextBox x:Name="lb_XuatDiaChi" Text="" HorizontalAlignment="Left" Margin="175,174,0,0" VerticalAlignment="Top" Height="20" Width="234"/>
+        <TextBox x:Name="lb_XuatSDT" Text="" HorizontalAlignment="Left" Margin="175,209,0,0" VerticalAlignment="Top" Height="20" Width="146"/>
+        <TextBox x:Name="lb_XuatCMND" Text="" HorizontalAlignment="Left" Margin="175,244,0,0" VerticalAlignment="Top" Height="20" Width="146"/>
+        <TextBox x:Name="lb_XuatEmail" Text="" HorizontalAlignment="Left" Margin="175,279,0,0" VerticalAlignment="Top" Height="20" Width="234"/>
+        <Button x:Name="btn_Close" Content="Close" HorizontalAlignment="Left" Margin="489,316,0,0" VerticalAlignment="Top" Width="75" Click="btn_Close_Click" />
+        <Button x:Name="btn_Submit" Content="Submit" HorizontalAlignment="Left" Margin="326,314,0,0" VerticalAlignment="Top" Width="75" Click="btn_Submit_Click" Height="22"/>
+        <ComboBox x:Name="cb_GioiTinh" HorizontalAlignment="Left" Margin="175,100,0,0" VerticalAlignment="Top" Width="69" Height="24"/>
+        <Label x:Name="lb_GioiTinh" Content="Giới Tính" HorizontalAlignment="Left" Margin="48,100,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Height="30"/>
+        <Label x:Name="lb_NgaySinh" Content="Ngày Sinh" HorizontalAlignment="Left" Margin="48,135,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Height="30"/>
+        <DatePicker x:Name="datepicker_NgaySinh" HorizontalAlignment="Left" Margin="175,136,0,0" VerticalAlignment="Top" Height="28" Width="112"/>
+    </Grid>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close" Executed="btn_Close_Click"/>
+        <CommandBinding Command="ApplicationCommands.Save" Executed="btn_Submit_Click"/>
+    </Window.CommandBindings>
+    <Window.InputBindings>
+        <KeyBinding Command="ApplicationCommands.Close" Key="Enter" />
+        <KeyBinding Command="ApplicationCommands.Save" Key="S" Modifiers="Control"/>
+    </Window.InputBindings>
+</Window>

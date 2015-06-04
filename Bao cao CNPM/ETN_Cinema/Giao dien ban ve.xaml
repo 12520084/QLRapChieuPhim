@@ -1,0 +1,20 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_ban_ve"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện bán vé xem phim" Height="318.372" Width="382.046" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <ComboBox x:Name="cb_TenPhim" HorizontalAlignment="Left" Margin="108,30,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb_TenPhim_SelectionChanged"/>
+        <ComboBox x:Name="cb_LoaiSuatChieu" HorizontalAlignment="Left" Margin="108,61,0,0" VerticalAlignment="Top" Width="60" SelectionChanged="cb_LoaiSuatChieu_SelectionChanged"/>
+        <ComboBox x:Name="cb_GioChieu" HorizontalAlignment="Left" Margin="108,92,0,0" VerticalAlignment="Top" Width="60"/>
+        <ComboBox x:Name="cb_NgayChieu" HorizontalAlignment="Left" Margin="108,123,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cb_PhongChieu" HorizontalAlignment="Left" Margin="108,154,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lb_TenPhim" Content="Tên Phim" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_LoaiSuatChieu" Content="Loại Suất Chiếu" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_GioChieu" Content="Giờ Chiếu" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_NgayChieu" Content="Ngày Chiếu" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_PhongChieu" Content="Phòng Chiếu" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Button x:Name="btn_Next" Content="Next" HorizontalAlignment="Left" Margin="291,237,0,0" VerticalAlignment="Top" Width="75" Click="btn_Next_Click"/>
+        <Label x:Name="lb_MaNhanVien" Content="Mã Nhân Viên" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <TextBox x:Name="tb_MaNhanVien" HorizontalAlignment="Left" Height="23" Margin="108,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_phieu_dat_ve"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện đặt vé" Height="331" Width="403" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <ComboBox x:Name="cb_TenPhim" HorizontalAlignment="Left" Margin="108,30,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb_TenPhim_SelectionChanged"/>
+        <ComboBox x:Name="cb_LoaiSuatChieu" HorizontalAlignment="Left" Margin="108,61,0,0" VerticalAlignment="Top" Width="60" SelectionChanged="cb_LoaiSuatChieu_SelectionChanged"/>
+        <ComboBox x:Name="cb_GioChieu" HorizontalAlignment="Left" Margin="108,92,0,0" VerticalAlignment="Top" Width="60"/>
+        <ComboBox x:Name="cb_NgayChieu" HorizontalAlignment="Left" Margin="108,123,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cb_PhongChieu" HorizontalAlignment="Left" Margin="108,154,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lb_TenPhim" Content="Tên Phim" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_LoaiSuatChieu" Content="Loại Suất Chiếu" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_GioChieu" Content="Giờ Chiếu" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_NgayChieu" Content="Ngày Chiếu" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_PhongChieu" Content="Phòng Chiếu" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Button x:Name="btn_Chair" Content="Chọn Ghế" HorizontalAlignment="Left" Margin="288,263,0,0" VerticalAlignment="Top" Width="75" Click="btn_Chair_Click"/>
+        <Label x:Name="lb_NgayDatVe" Content="Ngày Đặt Vé" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatNgayDatVe" Content="" HorizontalAlignment="Left" Margin="108,185,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lb_MaGheDat" Content="Mã Ghế Đặt" HorizontalAlignment="Left" Margin="10,216,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatMaGheDat" Content="" HorizontalAlignment="Left" Margin="108,216,0,0" VerticalAlignment="Top" Width="374"/>
+        <Button x:Name="btn_Submit" Content="Submit" HorizontalAlignment="Left" Margin="172,263,0,0" VerticalAlignment="Top" Width="75" Click="btn_Submit_Click"/>
+    </Grid>
+</Window>

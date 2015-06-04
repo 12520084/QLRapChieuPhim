@@ -1,0 +1,35 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_quan_ly_phim"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện quản lý phim" Height="416.418" Width="1222.344" WindowStartupLocation="CenterScreen">
+    <Grid RenderTransformOrigin="0.793,0.612">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu IsMainMenu="true"  Name="mn_QuanLiPhim" Height="85" VerticalAlignment="Top" Background="#FF000204">
+
+            <MenuItem x:Name="mn_NhapPhim" Height="85" Width="300" VerticalContentAlignment="Bottom" Click="mn_NhapPhim_Click" >
+
+                <MenuItem.Header>
+                    <TextBlock Text="Nhập Thông Tin Phim" Margin="73,0,-73,0" Foreground="#FFF98800" FontSize="15" FontWeight="Bold"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_SuaPhim" Height="85" Width="300" Click="mn_SuaPhim_Click">
+                <MenuItem.Header>
+                    <TextBlock Text="Chỉnh Sửa Thông Tin Phim" Margin="56,0,-56,0" Foreground="#FFF98800" FontSize="15" FontWeight="Bold"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_NhapSuatChieu" Height="85" Width="300" VerticalContentAlignment="Bottom" RenderTransformOrigin="2.278,0.512" Click="mn_NhapSuatChieu_Click" >
+
+                <MenuItem.Header>
+                    <TextBlock Text="Nhập Thông Tin Suất Chiếu" Margin="51,0,-51,0" Foreground="#FFF98800" FontSize="15" FontWeight="Bold"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_SuaSuatChieu" Height="85" Width="300" RenderTransformOrigin="1.338,0.635" Click="mn_SuaSuatChieu_Click">
+                <MenuItem.Header>
+                    <TextBlock Text="Chỉnh Sửa Thông Tin Suất Chiếu" Margin="32,0,-32,0" Foreground="#FFF98800" FontSize="15" FontWeight="Bold"/>
+                </MenuItem.Header>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>

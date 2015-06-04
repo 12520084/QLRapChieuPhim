@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ETN_Cinema.Giao_dien_dang_ky_khach_hang"
+        Title="Giao diện đăng ký khách hàng" Height="361.94" Width="562.687" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black" Margin="0,0,-6,0">
+        <Label x:Name="lb_HoTen" Content="Họ và Tên" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Width="75"/>
+        <Label x:Name="lb_DiaChi" Content="Địa chỉ" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Width="54"/>
+        <Label x:Name="lb_NgaySinh" Content="Ngày sinh" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.056,0.201" FontWeight="Bold" Foreground="#FFF98800" Width="75"/>
+        <Label x:Name="lb_SoDienThoai" Content="Số điện thoại" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Width="96"/>
+        <Label x:Name="lb_CMND" Content="Số CMND" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Width="73"/>
+        <Label x:Name="lb_GioiTinh" Content="Giới tính" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Width="67"/>
+        <DatePicker x:Name="datePicker_NgaySinh" HorizontalAlignment="Left" Margin="123,90,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label x:Name="lb_Email" Content="Email" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Width="46"/>
+        <TextBox x:Name="tb_HoTen" HorizontalAlignment="Left" Height="23" Margin="123,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="384"/>
+        <TextBox x:Name="tb_DiaChi" HorizontalAlignment="Left" Height="23" Margin="123,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="384"/>
+        <TextBox x:Name="tb_SoDienThoai" HorizontalAlignment="Left" Height="23" Margin="123,122,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="384"/>
+        <TextBox x:Name="tb_CMND" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="384" Margin="123,154,0,0"/>
+        <TextBox x:Name="tb_EmailName" HorizontalAlignment="Left" Height="23" Margin="123,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="201"/>
+        <Button x:Name="btn_Submit" Content="Submit" HorizontalAlignment="Left" Margin="447,297,0,0" VerticalAlignment="Top" Width="85" Click="btn_Submit_Click"/>
+        <Label x:Name="lb_NgayDangKy" Content="Ngày đăng ký" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800" Width="99"/>
+        <DatePicker x:Name="datePicker_NgayDangKy" HorizontalAlignment="Left" Margin="123,245,0,0" VerticalAlignment="Top" Width="115"/>
+        <ComboBox x:Name="cb_GioiTinh" HorizontalAlignment="Left" Margin="123,185,0,0" VerticalAlignment="Top" Width="68" SelectionChanged="cb_GioiTinh_SelectionChanged"/>
+        <TextBox x:Name="tb_EmailDomain" HorizontalAlignment="Left" Height="23" Margin="359,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="136"/>
+        <Label x:Name="lb_At" Content="@" HorizontalAlignment="Left" Margin="325,212,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Foreground="#FFF98800" Width="28"/>
+    </Grid>
+</Window>

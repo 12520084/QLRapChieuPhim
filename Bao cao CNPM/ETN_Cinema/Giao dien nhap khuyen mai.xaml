@@ -1,0 +1,28 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_nhap_khuyen_mai"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện nhập khuyến mãi" Height="405.01" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <Label x:Name="lb_TenKM" Content="Tên Chương Trình KM" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_NgayBatDauKM" Content="Ngày Bắt Đầu" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_NgayKetThucKM" Content="Ngày Kết Thúc" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_NoiDungKM" Content="Nội Dung" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_LoaiKHMoi" Content="Khách Hàng Mới" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_LoaiKHTT" Content="Khách Hàng Thân Thiết" HorizontalAlignment="Left" Margin="10,216,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_LoaiKHVIP" Content="Khách Hàng VIP" HorizontalAlignment="Left" Margin="10,247,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_LoaiKHBT" Content="Khách Hàng Bình Thường" HorizontalAlignment="Left" Margin="10,278,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <Label x:Name="lb_HeSoKhuyenMai" Content="Hệ số khuyến mãi đối với từng loại khách hàng:" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" Foreground="#FFF98800" FontWeight="Bold"/>
+        <TextBox x:Name="tb_TenKM" HorizontalAlignment="Left" Height="23" Margin="160,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="tb_NoiDungKM" HorizontalAlignment="Left" Height="23" Margin="160,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="tb_LoaiKHMoi" HorizontalAlignment="Left" Height="23" Margin="160,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="tb_LoaiKHTT" HorizontalAlignment="Left" Height="23" Margin="160,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="tb_LoaiKHVIP" HorizontalAlignment="Left" Height="23" Margin="160,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <Button x:Name="btn_Submit" Content="Submit" HorizontalAlignment="Left" Margin="385,332,0,0" VerticalAlignment="Top" Width="75" Click="btn_Submit_Click"/>
+        <TextBox x:Name="tb_LoaiKHBT" HorizontalAlignment="Left" Height="23" Margin="160,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
+        <DatePicker x:Name="datepicker_NgayBatDau" HorizontalAlignment="Left" Margin="160,62,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="datepicker_NgayKetThuc" HorizontalAlignment="Left" Margin="160,93,0,0" VerticalAlignment="Top"/>
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_mo_suat_chieu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện mở suất chiếu" Height="270.149" Width="485.075" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <Label x:Name="lb_TenPhim" Content="Tên Phim" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_NgayChieu" Content="Ngày chiếu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,46,0,0" FontWeight="Bold" Foreground="#FFF98800"/>
+        <DatePicker x:Name="datePicker_NgayChieu" HorizontalAlignment="Left" Margin="139,47,0,0" VerticalAlignment="Top" BorderThickness="1"/>
+        <Label x:Name="lb_GioChieu" Content="Giờ Chiếu" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_GiaVe" Content="Giá Vé" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <TextBox x:Name="tb_GiaVe" HorizontalAlignment="Left" Height="23" Margin="139,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lb_PhongChieu" Content="Phòng chiếu" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_LoaiSuatChieu" Content="Loại suất chiếu" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Button x:Name="btn_Submit" Content="Submit" HorizontalAlignment="Left" Margin="395,209,0,0" VerticalAlignment="Top" Width="75" Click="btn_Submit_Click"/>
+        <ComboBox x:Name="cb_Hour" HorizontalAlignment="Left" Margin="139,81,0,0" VerticalAlignment="Top" Width="60"/>
+        <ComboBox x:Name="cb_Minute" HorizontalAlignment="Left" Margin="204,81,0,0" VerticalAlignment="Top" Width="60"/>
+        <ComboBox x:Name="cb_MaPhim" HorizontalAlignment="Left" Margin="139,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb_MaPhim_SelectionChanged"/>
+        <ComboBox x:Name="cb_TenPhongChieu" HorizontalAlignment="Left" Margin="139,143,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cb_LoaiSuatChieu" HorizontalAlignment="Left" Margin="139,174,0,0" VerticalAlignment="Top" Width="60"/>
+    </Grid>
+</Window>

@@ -1,0 +1,78 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_quan_li_phong_kinh_doanh"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               Title="Giao diện quản lý phòng kinh doanh" Height="600" Width="1250" WindowStartupLocation="CenterScreen">    <Grid>
+        <Menu IsMainMenu="true"  Name="mn_QuanLiPhongKinhDoanh" Height="85" VerticalAlignment="Top" Background="#FF000204">
+
+            <MenuItem x:Name="mn_HoSo" Height="85" Width="130" Click="mn_HoSo_Click" HorizontalContentAlignment="Center">
+                <MenuItem.Icon>
+                    <Image Source = "resource\people_manage\view_profile.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Xem Hồ Sơ" Margin="10,0,-9,0" RenderTransformOrigin="0.753,3.557" Foreground="#FFF98800" FontSize="15" FontWeight="Bold"/>
+                </MenuItem.Header>
+            </MenuItem>
+
+            <MenuItem x:Name="mn_QuanLy" Height="85" Width="172" VerticalContentAlignment="Bottom" Click="mn_QuanLy_Click" >
+                <MenuItem.Icon>
+                    <Image Source = "resource\business_manage\manage.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text=" Nghiệp Vụ Quản Lý" Foreground="#FFF98800" FontSize="15" FontWeight="Bold"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_Marketing" Height="85" Width="195" Click="mn_Marketing_Click">
+                <MenuItem.Icon>
+                    <Image Source = "resource\business_manage\marketing.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Nghiệp Vụ Marketing" Foreground="#FFF98800" FontSize="15" FontWeight="Bold" Margin="10,0,-10,0"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_ChamSocKhachHang" Height="85" Width="197" Click="mn_ChamSocKhachHang_Click">
+                <MenuItem.Icon>
+                    <Image Source = "resource\business_manage\care.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Chăm Sóc Khách Hàng" Foreground="#FFF98800" FontSize="15" FontWeight="Bold" Margin="10,0,-10,0"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_KhachHang" Height="85" Width="212" Click="mn_KhachHang_Click">
+                <MenuItem.Icon>
+                    <Image Source = "resource\business_manage\customer.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Nghiệp Vụ Khách Hàng" Foreground="#FFF98800" FontSize="15" FontWeight="Bold" Margin="10,0,-10,0"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_Report" Height="85" Width="144" HorizontalContentAlignment="Center" Click="mn_Report_Click">
+                <MenuItem.Icon>
+                    <Image Source = "resource\business_manage\report.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Xuất Thống Kê" RenderTransformOrigin="0.753,3.557" Foreground="#FFF98800" FontSize="15" FontWeight="Bold" Margin="10,0,-10,0"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_DoiMatKhau" Height="85" Width="142" HorizontalContentAlignment="Center" Click="mn_DoiMK_Click">
+                <MenuItem.Icon>
+                    <Image Source = "resource\people_manage\chage.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Đổi Mật Khẩu" RenderTransformOrigin="0.753,3.557" Foreground="#FFF98800" FontSize="15" FontWeight="Bold" Height="22" VerticalAlignment="Bottom" Margin="10,0,-10,0"/>
+                </MenuItem.Header>
+            </MenuItem>
+        </Menu>
+        <Canvas Name="cv_XemHoso" HorizontalAlignment="Left" Height="455" Margin="16,104,0,0" VerticalAlignment="Top" Width="766">
+            <Label x:Name="lb_LoiChao" Canvas.Top="128" Width="295" Height="41" Canvas.Left="72"/>
+            <Image x:Name="avatar" Height="131" Canvas.Left="60" Canvas.Top="174" Width="127"/>
+            <Label Content="Họ Và Tên: " Canvas.Left="203" Canvas.Top="174" Width="68"/>
+            <Label Content="Ngày/Tháng/Năm Sinh: " Canvas.Left="203" Canvas.Top="205" RenderTransformOrigin="-0.265,-0.637"/>
+            <Label Content="Quê Quán: " Canvas.Left="203" Canvas.Top="236"/>
+            <Label Content="Công Ty:" Canvas.Left="203" Canvas.Top="262"/>
+            <Label x:Name="name" Content="" Canvas.Left="349" Canvas.Top="174" Width="141"/>
+            <Label x:Name="birthday" Content="" Canvas.Left="349" Canvas.Top="205" Width="142"/>
+            <Label x:Name="province" Content="" Canvas.Left="349" Canvas.Top="236" RenderTransformOrigin="0.157,0.009" Width="141"/>
+            <Label x:Name="company" Content="" Canvas.Left="350" Canvas.Top="262" RenderTransformOrigin="0.502,-0.498" Width="141"/>
+        </Canvas>
+    </Grid>
+</Window>

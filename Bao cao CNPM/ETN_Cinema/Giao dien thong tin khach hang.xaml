@@ -1,0 +1,32 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_thong_tin_khach_hang"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện thông tin khách hàng" Height="550" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid Background="Black">
+        <Label x:Name="lb_Title" Content="THÔNG TIN KHÁCH HÀNG" HorizontalAlignment="Center" Margin="175,10,118,0" VerticalAlignment="Top" FontSize="20" Width="301" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_MaKH" Content="Mã KH" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_HoTen" Content="Họ Tên" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_DiaChi" Content="Địa Chỉ" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_SDT" Content="Số Điện Thoại" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_CMND" Content="CMND" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_Email" Content="Email" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_LoaiKH" Content="Loại Khách Hàng" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_NgayDK" Content="Ngày Đăng Ký" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_DiemTichLuy" Content="Điểm Tích Lũy" HorizontalAlignment="Left" Margin="10,362,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatMaKH" Content="Label" HorizontalAlignment="Left" Margin="137,52,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatHoTen" Content="Label" HorizontalAlignment="Left" Margin="137,83,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatDiaChi" Content="Label" HorizontalAlignment="Left" Margin="137,176,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatSDT" Content="Label" HorizontalAlignment="Left" Margin="137,207,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatCMND" Content="Label" HorizontalAlignment="Left" Margin="137,238,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatEmail" Content="Label" HorizontalAlignment="Left" Margin="137,269,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatLoaiKH" Content="Label" HorizontalAlignment="Left" Margin="137,300,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatNgayDK" Content="Label" HorizontalAlignment="Left" Margin="137,331,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatDTL" Content="Label" HorizontalAlignment="Left" Margin="137,362,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Button x:Name="btn_Close" Content="Close" HorizontalAlignment="Left" Margin="466,474,0,0" VerticalAlignment="Top" Width="75" Click="btn_Close_Click"/>
+        <Label x:Name="lb_XuatGioiTinh" Content="Label" HorizontalAlignment="Left" Margin="137,145,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Label x:Name="lb_Ngaysinh" Content="Ngày Sinh" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+        <Label x:Name="lb_XuatNgaySinh" Content="Label" HorizontalAlignment="Left" Margin="137,114,0,0" VerticalAlignment="Top" Foreground="#FFF98800"/>
+        <Label x:Name="lb_GioiTinh" Content="Giới tính" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFF98800"/>
+
+    </Grid>
+</Window>

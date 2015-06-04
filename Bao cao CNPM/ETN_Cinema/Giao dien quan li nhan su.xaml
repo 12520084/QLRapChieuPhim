@@ -1,0 +1,51 @@
+﻿<Window x:Class="ETN_Cinema.Giao_dien_quan_li_nhan_su"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Giao diện quản lý nhân sự" Height="600" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Menu IsMainMenu="true"  Name="mn_QuanLiNhanSu" Height="89" VerticalAlignment="Top" Width="792" Background="#FF000204">
+
+            <MenuItem x:Name="mn_HoSo" Height="88" Width="130" Click="mn_HoSo_Click">
+                <MenuItem.Icon>
+                    <Image Source = "resource\people_manage\view_profile.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Xem Hồ Sơ" Margin="10,0,-33,0" RenderTransformOrigin="0.753,3.557" Foreground="#FFF98800" FontSize="15" FontWeight="Bold"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_NhapNV" Height="84" Width="193" VerticalContentAlignment="Bottom" Click="mn_NhapNV_Click" >
+                <MenuItem.Icon>
+                    <Image Source = "resource\people_manage\type.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Nhập Nhân Viên Mới" Foreground="#FFF98800" FontSize="15" FontWeight="Bold" Margin="10,0,-10,0"/>
+                </MenuItem.Header>
+            </MenuItem>
+
+            <MenuItem x:Name="mn_SuaNV" Height="84" Width="197" Click="mn_SuaNV_Click">
+                <MenuItem.Icon>
+                    <Image Source = "resource\people_manage\edit.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Chỉnh Sửa Nhân Viên" Foreground="#FFF98800" FontSize="15" FontWeight="Bold" Width="158" Margin="10,0,-9,0"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_DoiMatKhau" Height="84" Width="142" HorizontalContentAlignment="Center" Click="mn_DoiMK_Click">
+                <MenuItem.Icon>
+                    <Image Source = "resource\people_manage\chage.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Đổi Mật Khẩu" Margin="10,0,-9,0" RenderTransformOrigin="0.753,3.557" Foreground="#FFF98800" FontSize="15" FontWeight="Bold"/>
+                </MenuItem.Header>
+            </MenuItem>
+            <MenuItem x:Name="mn_Xuat" Height="84" Width="120" HorizontalContentAlignment="Center" Click="mn_DangXuat_Click">
+                <MenuItem.Icon>
+                    <Image Source = "resource\people_manage\logout.png" Height="40" Margin="0,0,-12,-24" RenderTransformOrigin="0.638,-0.295"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Đăng Xuất" Margin="10,0,-9,0" RenderTransformOrigin="0.753,3.557" Foreground="#FFF98800" FontSize="15" FontWeight="Bold"/>
+                </MenuItem.Header>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
